@@ -1,3 +1,36 @@
+/*
+Testing Strategy for ChatNav Component:
+
+1. Rendering:
+   - Verify that the ChatNav component renders without errors.
+   - Check the visibility of the menu items, logo, and settings icon.
+
+2. Tab Selection:
+   - Test each tab selection:
+     - Emotions, Engagement, Accuracy, Flow (Coaching).
+   - Confirm that the selected tab is highlighted correctly.
+
+3. Click Events:
+   - Test click events on each menu item and verify if the corresponding action is dispatched.
+   - Test click events on the menu icon (SlMenu) and settings icon (RiSettings5Fill).
+   - Ensure the proper state changes and actions are triggered.
+
+4. Mobile View:
+   - Simulate the mobile view (lg:hidden) and test the visibility of menu items, logo, and icons.
+   - Test the functionality of the menu icon in toggling the chat navigation.
+
+5. Styling:
+   - Confirm that styling, colors, and transitions are applied correctly.
+   - Test responsiveness and alignment of elements.
+
+6. Redux State:
+   - Test that the component reads the correct tab and setting state from the Redux store.
+   - Dispatch actions to change the state and verify if the component updates accordingly.
+
+7. Component Updates and Maintenance:
+   - Ensure that the component works after future updates or changes.
+   - Update the component code and check if existing tests still pass.
+*/
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom"; // Updated import

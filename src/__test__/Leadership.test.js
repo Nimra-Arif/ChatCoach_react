@@ -1,3 +1,38 @@
+/*
+Testing Strategy for Leadership Component:
+
+1. Rendering:
+   - Verify that the Leadership component renders correctly.
+   - Check if the title, content, image, and button are displayed as expected.
+   - Confirm that the component structure is correct.
+
+2. Scroll Effect:
+   - Ensure that the `useEffect` hook is correctly used to scroll to the top on component mount.
+   - Mock the `window.scrollTo` method and check if it is called with the correct arguments.
+
+3. Content and Styles:
+   - Test if the component displays the leadership content accurately.
+   - Verify the correct usage of font styles, sizes, and other CSS classes.
+   - Ensure that the image is rendered with the correct alt text.
+
+4. Button and Link:
+   - Check if the "Get Expert Advice" button is displayed and has the correct styles.
+   - Verify that the button triggers the expected action or navigation.
+   - Confirm the presence of the email link and its correctness.
+
+5. Code Coverage:
+   - Aim for high code coverage to ensure most code paths are tested.
+   - Identify and cover critical and complex logic related to rendering and styling.
+
+6. Component Updates and Maintenance:
+   - Establish a baseline for future maintenance efforts.
+   - Modify the component code or structure and ensure existing tests still pass.
+
+7. Clean-Up:
+   - Clean up any mocks or resources used in the tests.
+   - Verify that tests can run independently without interference.
+*/
+
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import Leadership from '../Components/Leadership';
@@ -39,5 +74,5 @@ describe('Leadership Component', () => {
     });
   });
 
-  // ... rest of the code
+  
 });
