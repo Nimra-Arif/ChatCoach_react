@@ -1,0 +1,84 @@
+{
+  "name": "chat_coach",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
+    "@fullpage/react-fullpage": "^0.1.40",
+    "@react-oauth/google": "^0.11.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@stripe/react-stripe-js": "^2.1.1",
+    "@stripe/stripe-js": "^1.54.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/gsap": "^3.0.0",
+    "animate.css": "^4.1.1",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "classnames": "^2.3.2",
+    "emoji-mart": "^5.5.2",
+    "emoji-picker-react": "^3.6.5",
+    "gsap": "^3.12.2",
+    "js-sha256": "^0.10.1",
+    "jwt-decode": "^3.1.2",
+    "react": "^18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-emoji-picker": "^1.0.13",
+    "react-gtm-module": "^2.0.11",
+    "react-icons": "^4.9.0",
+    "react-id-swiper": "^4.0.0",
+    "react-parallax": "^3.5.1",
+    "react-player": "^2.12.0",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-swipeable": "^7.0.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "slick-carousel": "^1.8.1",
+    "stripe": "^12.17.0",
+    "swiper": "^9.4.1",
+    "tailwindcss": "^3.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:all": "react-scripts test --watchAll=false -u",
+    "test:coverage": "npm run test:all -- --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^6.1.6",
+    "@testing-library/react": "^14.1.2",
+    "jest": "^29.7.0",
+    "redux-mock-store": "^1.5.4"
+  }
+}

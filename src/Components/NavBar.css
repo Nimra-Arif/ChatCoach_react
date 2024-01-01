@@ -1,0 +1,26 @@
+.nav-shadow {
+    box-shadow: 0px 15px 24px 0px #6B6B6B4D;
+}
+
+.Menu-Container:hover .menu-option:not(:hover) {
+    color: #F5F5F55e;
+}
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

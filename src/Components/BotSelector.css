@@ -1,0 +1,22 @@
+@media screen and (min-height: 800px) {
+  .text {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-height: 990px) {
+  .text {
+    font-size: 1rem;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+}

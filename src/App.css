@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: var(--font-family);
+  /* background-color: #EDF1F6; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #edf1f6;
+}
+
+
+#root {
+  overflow-x: hidden;
+}
+

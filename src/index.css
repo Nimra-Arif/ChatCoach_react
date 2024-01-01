@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Poppins";
+
+  --color-primary: #011526;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-Black.otf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-ExtraBold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-Medium.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-Regular.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-Light.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PPPanogram";
+  src: url("./Assets/Pangram-ExtraLight.otf");
+  font-weight: 900;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  }
+}
+
+@keyframes flip-login {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes flip-signup {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.flip-login {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.flip-signup {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.text-h1 {
+  font-size: 65px;
+  font-weight: 800;
+}
+
+.text-h2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.text-h3 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.text-h4 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.text-h5 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.text-p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .text-h1 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .text-h2 {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .text-h3 {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .text-h4 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .text-h5 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .text-p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
