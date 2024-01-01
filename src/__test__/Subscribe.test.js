@@ -50,7 +50,7 @@
     - Clean up any mocks or resources used in the tests.
     - Verify that tests can run independently without interference.
 
-Note: Adapt the testing strategy based on specific component requirements and functionality.
+
 */
 
 
