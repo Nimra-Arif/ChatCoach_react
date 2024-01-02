@@ -4,6 +4,14 @@ import { getEmotionalDistribution, getFlow } from "../Store/msgSlice/msg";
 import { setBotLineData, setUserLineData } from "../Store/chartSlice/chart";
 import { freeVersion } from "../Data/ticktokapis";
 
+/**
+ * Message Component - A component representing a chat message in the chat box.
+ * @param {Object} props - Props for the Message component.
+ * @param {string|string[]} props.msg1 - Message content for the sender.
+ * @param {string} props.msg2 - Message content for the receiver.
+ * @param {string} props.mode - Mode of the message (if any).
+ * @returns {JSX.Element} JSX element representing the Message component.
+ */
 const Message = ({ msg1, msg2, mode }) => {
   if (Array.isArray(msg1)) {
     return (
@@ -76,6 +84,10 @@ const Message = ({ msg1, msg2, mode }) => {
   }
 };
 
+/**
+ * ChatBox Component - A component displaying a chat interface with messages.
+ * @returns {JSX.Element} JSX element representing the ChatBox component.
+ */
 const ChatBox = () => {
   const messages = useSelector((state) => state.msg.messages);
   const tab = useSelector((state) => state.chat.value);
