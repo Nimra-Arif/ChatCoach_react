@@ -10,11 +10,29 @@ import axios from "axios";
 import { completePayment } from "../Data/ticktokapis";
 AOS.init();
 
+
+/**
+ * SubscriptionCard Component
+ *
+ * Displays a subscription card with pricing details, features, and a button to start a free trial.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {boolean} props.annualPricing - Indicates if the pricing is annual or monthly.
+ * @returns {JSX.Element} - The rendered SubscriptionCard component.
+ */
+
 const SubscriptionCard = ({ annualPricing }) => {
   const [loading, setloading] = useState(false);
   // const [loading1, setloading1] = useState(false)
   const navigate = useNavigate();
 
+  /**
+   * Handles the click event to initiate the payment process.
+   *
+   * @param {string} plan - The selected plan (1 for monthly, 3 for annual).
+   */
+  
   const makePayment = async (plan) => {
     setloading(true);
     try {
