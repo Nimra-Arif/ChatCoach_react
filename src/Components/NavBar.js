@@ -9,6 +9,14 @@ import { RxCross1 } from "react-icons/rx";
 import logo from "../Assets/logo.svg";
 import smallLogo from "../Assets/LogoSmall.svg";
 
+/**
+ * NavBar component to display a navigation bar with menu options, logo, and buttons.
+ *
+ * @component
+ * @param {Object} props - The properties of the NavBar component.
+ * @param {Function} props.setNotSub - Function to set subscription status.
+ * @returns {JSX.Element} - The rendered NavBar component.
+ */
 const NavBar = ({ setNotSub }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navigate = useNavigate();
@@ -25,7 +33,9 @@ const NavBar = ({ setNotSub }) => {
     const { data } = userRes;
     return data;
   };
-
+  /**
+   * Check the user's subscription status and navigate accordingly.
+   */
   const checkSub = async () => {
     if (localStorage.getItem("token")) {
       getUserInformation(localStorage.getItem("token")).then((res) => {
@@ -51,7 +61,11 @@ const NavBar = ({ setNotSub }) => {
   function toggle() {
     setIsNavOpen(!isNavOpen);
   }
-
+/**
+   * Render the NavBar component.
+   *
+   * @returns {JSX.Element} - The rendered JSX element.
+   */
   return (
     <>
       <div
