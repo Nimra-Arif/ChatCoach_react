@@ -20,8 +20,22 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
+/**
+ * LineChart1 component to display a line chart with a single data set.
+ *
+ * @component
+ * @param {Object} props - The properties of the LineChart1 component.
+ * @param {string} props.title - The title of the line chart.
+ * @param {string} props.subTitle - The subtitle of the line chart.
+ * @param {string[]} props.labels - The labels for the x-axis.
+ * @param {number[]} props.dataSet - The data points for the chart.
+ * @returns {JSX.Element} - The rendered LineChart1 component.
+ */
 const LineChart1 = ({ title, subTitle, labels, dataSet }) => {
+  /**
+   * Data configuration for the LineChart1 component.
+   * @type {Object}
+   */
   const data = {
     labels: labels,
     datasets: [
