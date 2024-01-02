@@ -2,7 +2,18 @@ import React, { useEffect } from "react";
 
 import leader from "../Assets/leader.svg";
 
+/**
+ * Leadership component to showcase trusted leadership information.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered Leadership component.
+ */
+
 const Leadership = () => {
+  /**
+   * Effect hook to scroll to the top of the page when the component mounts.
+   * @type {Function} useEffect
+   */
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
