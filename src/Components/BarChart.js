@@ -19,6 +19,16 @@ ChartJS.register(
   Legend
 );
 
+/**
+ * BarChart Component - A component to display a bar chart using Chart.js library.
+ * @param {Object} props - Props for the BarChart component.
+ * @param {string} props.title - Title of the bar chart.
+ * @param {string} props.subTitle - Subtitle or description of the chart.
+ * @param {string[]} props.labels - Labels for the X-axis of the chart.
+ * @param {number[]} props.userData - Data points for the 'User End' bar in the chart.
+ * @param {number[]} props.botData - Data points for the 'Bot End' bar in the chart.
+ * @returns {JSX.Element} JSX element representing the BarChart component.
+ */
 const BarChart = ({ title, subTitle, labels, userData, botData }) => {
   const data = {
     labels: labels,
