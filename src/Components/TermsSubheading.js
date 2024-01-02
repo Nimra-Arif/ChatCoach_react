@@ -1,6 +1,21 @@
 import React, { useState } from "react";
 import { FaHashtag } from "react-icons/fa";
 
+/**
+ * TermsSubheading Component
+ *
+ * Displays a subheading with an optional link for quick navigation.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.heading - The main subheading text.
+ * @param {string} props.text1 - The first optional additional text.
+ * @param {string} props.text2 - The second optional additional text.
+ * @param {string} props.text3 - The third optional additional text.
+ * @param {string} props.text4 - The fourth optional additional text.
+ * @returns {JSX.Element} - The rendered TermsSubheading component.
+ */
+
 const TermsSubheading = ({ heading, text1, text2, text3, text4 }) => {
   const [showLink, setShowLink] = useState(false);
 

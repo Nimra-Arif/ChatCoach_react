@@ -16,6 +16,11 @@ import { FaHashtag } from "react-icons/fa";
 const TermsHeading = ({ heading, text }) => {
   const [showLink, setShowLink] = useState(false);
 
+
+  /**
+   * Handles the mouse enter event to show the navigation link.
+   */
+  
   const handleMouseEnter = () => {
     setShowLink(true);
   };
