@@ -12,6 +12,10 @@ import logo from "../Assets/logo.svg";
 import { SlMenu } from "react-icons/sl";
 import { RiSettings5Fill } from "react-icons/ri";
 
+/**
+ * ChatNav Component - A navigation component displaying tabs and settings for the chat interface.
+ * @returns {JSX.Element} JSX element representing the ChatNav component.
+ */
 const ChatNav = () => {
   const tab = useSelector((state) => state.chat.value);
   const settingsOpen = useSelector((state) => state.chat.setting);

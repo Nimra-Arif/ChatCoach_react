@@ -4,6 +4,10 @@ import { useDispatch } from "react-redux";
 import { setTab, toggle, setAnalyticsMob } from "../Store/chatNavSlice/chat";
 import { RxCross1 } from "react-icons/rx";
 
+/**
+ * ChatNavMob Component - A mobile navigation component for chat tabs and log out.
+ * @returns {JSX.Element} JSX element representing the ChatNavMob component.
+ */
 const ChatNavMob = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
