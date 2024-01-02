@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+/**
+ * Sidebar Component
+ *
+ * Displays a vertical sidebar with dynamic opacity and background gradient based on scroll percentage.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered Sidebar component.
+ */
+
+
 const Sidebar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [scroll, setScroll] = useState(0);
