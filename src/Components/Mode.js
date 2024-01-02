@@ -1,5 +1,14 @@
 import React from "react";
 
+/**
+ * Mode component to display a mode with a name and description.
+ *
+ * @component
+ * @param {Object} props - The properties of the Mode component.
+ * @param {string} props.name - The name of the mode.
+ * @param {string} props.desc - The description of the mode.
+ * @returns {JSX.Element} - The rendered Mode component.
+ */
 const Mode = ({ name, desc }) => {
   return (
     <div
