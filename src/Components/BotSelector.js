@@ -14,6 +14,12 @@ import "./BotSelector.css";
 import { setBot, setLoading } from "../Store/chatNavSlice/chat";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
+/**
+ * BotSelector Component - A component to display a slider of bots for selection.
+ * @param {Object} props - Props for the BotSelector component.
+ * @param {boolean} props.changeAgent - Indicates whether the agent is being changed.
+ * @returns {JSX.Element} JSX element representing the BotSelector component.
+ */
 const Bot = ({ bot, changeAgent }) => (
   <div className="flex flex-col items-center justify-center w-full gap-2">
     <img
