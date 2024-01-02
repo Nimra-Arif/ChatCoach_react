@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
+/**
+ * QandA component to display a question and answer with an expandable section.
+ *
+ * @component
+ * @param {Object} props - The properties of the QandA component.
+ * @param {string} props.question - The question text to be displayed.
+ * @param {string} props.answer - The answer text to be displayed.
+ * @returns {JSX.Element} - The rendered QandA component.
+ */
+
 const QandA = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
