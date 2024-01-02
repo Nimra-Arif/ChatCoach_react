@@ -57,7 +57,18 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
+/**
+ * LineChart component to display a line chart with user and bot data.
+ *
+ * @component
+ * @param {Object} props - The properties of the LineChart component.
+ * @param {string} props.title - The title of the line chart.
+ * @param {string} props.subTitle - The subtitle of the line chart.
+ * @param {string[]} props.labels - The labels for the x-axis.
+ * @param {number[]} props.userData - The user data points for the chart.
+ * @param {number[]} props.botData - The bot data points for the chart.
+ * @returns {JSX.Element} - The rendered LineChart component.
+ */
 const LineChart = ({ title, subTitle, labels, userData, botData }) => {
   const data = {
     labels: labels,
