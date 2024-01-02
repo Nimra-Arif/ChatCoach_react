@@ -6,12 +6,26 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+/**
+ * Individual slide component for the HeroSlider.
+ *
+ * @component
+ * @param {Object} props - The properties of the Slide component.
+ * @param {string} props.img - The source URL of the image for the slide.
+ * @returns {JSX.Element} - The rendered Slide component.
+ */
 const Slide = ({ img }) => (
   <div className="flex flex-col items-center justify-center cursor-grab">
     <img src={img} alt="hero" className="object-contain w-[35vw]" />
   </div>
 );
 
+/**
+ * HeroSlider component to create a responsive image slider.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered HeroSlider component.
+ */
 const HeroSlider = () => {
   const images = [ss, ss];
 
