@@ -1,5 +1,16 @@
 import React from "react";
 
+/**
+ * ProgressCard component to display a card with an icon, title, and text.
+ *
+ * @component
+ * @param {Object} props - The properties of the ProgressCard component.
+ * @param {string} props.icon - The source URL of the icon image.
+ * @param {string} props.title - The title text for the card.
+ * @param {string} props.text - The description text for the card.
+ * @returns {JSX.Element} - The rendered ProgressCard component.
+ */
+
 const ProgressCard = ({ icon, title, text }) => {
   return (
     <div
