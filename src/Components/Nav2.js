@@ -3,6 +3,12 @@ import React from "react";
 import logo from "../Assets/logo.svg";
 import { Link } from "react-router-dom";
 
+/**
+ * Nav2 component to display a navigation bar with a logo.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered Nav2 component.
+ */
 const Nav2 = () => {
   return (
     <div className="flex flex-col items-start justify-center bg-[#011526] w-full">
