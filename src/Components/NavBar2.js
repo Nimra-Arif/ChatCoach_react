@@ -3,9 +3,22 @@ import { Link, useNavigate } from "react-router-dom";
 
 import logo from "../Assets/logo.svg";
 
+
+/**
+ * NavBar2 component to display a navigation bar with logo and buttons.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered NavBar2 component.
+ */
+
 const NavBar2 = () => {
   const navigate = useNavigate();
-
+ /**
+   * Render the NavBar2 component.
+   *
+   * @returns {JSX.Element} - The rendered JSX element.
+   */
+  
   return (
     <>
       <div
