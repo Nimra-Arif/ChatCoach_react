@@ -4,6 +4,15 @@ import whatWeOffer from "../Assets/WhatWeOffer.svg";
 import ourJourney from "../Assets/OurJourney.svg";
 import ourValues from "../Assets/OurValues.svg";
 
+/**
+ * Values Component
+ *
+ * Displays a section with information about what the company offers, its journey, and its values.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered Values component.
+ */
+
 const Values = () => {
   const [value, setValue] = useState(1);
 
