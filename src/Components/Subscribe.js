@@ -1,5 +1,14 @@
 import React from "react";
 
+/**
+ * Subscribe Component
+ *
+ * Displays a subscription form with a prompt, description, email input, and subscribe button.
+ *
+ * @component
+ * @returns {JSX.Element} - The rendered Subscribe component.
+ */
+
 const Subscribe = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-[#011526] p-8 rounded-[20px] lg:w-[900px] w-full m-3">
