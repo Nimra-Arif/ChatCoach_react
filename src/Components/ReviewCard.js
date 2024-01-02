@@ -5,6 +5,18 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
 
+/**
+ * ReviewCard Component
+ *
+ * Displays a review card with stars, reviewer's name, company, and review text.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.name - The name of the reviewer.
+ * @param {string} props.company - The company of the reviewer.
+ * @param {string} props.text - The review text.
+ * @returns {JSX.Element} - The rendered ReviewCard component.
+ */
 const ReviewCard = ({ name, company, text }) => {
   const location = useLocation();
   const [isAboutPage, setIsAboutPage] = useState(false);

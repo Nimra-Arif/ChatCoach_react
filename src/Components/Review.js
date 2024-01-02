@@ -1,5 +1,19 @@
 import React from "react";
 
+/**
+ * Review Component
+ * 
+ * Displays a review card with text, age, name, hobby, and avatar.
+ *
+ * @component
+ * @param {Object} props - The component props.
+ * @param {string} props.text - The review text.
+ * @param {number} props.age - The age of the reviewer.
+ * @param {string} props.name - The name of the reviewer.
+ * @param {string} props.hobby - The hobby of the reviewer.
+ * @param {string} props.avatar - The URL of the reviewer's avatar.
+ * @returns {JSX.Element} - The rendered Review component.
+ */
 const Review = ({ text, age, name, hobby, avatar }) => {
   return (
     <div className="flex flex-row items-center justify-between border-white border-2 bg-[#E1EBFF] md:max-w-[860px] md:h-[450px] h-[400px] w-full rounded-[1.25rem] p-5 md:mx-5 lg:mb-[160px] md:shadow-2xl">
