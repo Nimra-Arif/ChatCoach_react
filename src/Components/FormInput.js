@@ -5,6 +5,14 @@ import React, { useState } from "react";
 
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
+/**
+ * FormInput Component
+ * @param {string} type - The type of input field (e.g., text, password, date).
+ * @param {string} placeholder - Placeholder text for the input field.
+ * @param {function} onChange - Handler function for the `onChange` event of the input field.
+ * @param {string} value - Value to be displayed in the input field.
+ * @returns {JSX.Element} - Form input field with optional show/hide password button.
+ */
 const FormInput = ({ type, placeholder, onChange, value }) => {
   const [showPassword, setShowPassword] = useState(false);
   if (type === "date") {
