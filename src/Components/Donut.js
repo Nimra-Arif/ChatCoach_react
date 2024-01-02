@@ -5,6 +5,17 @@ import ChartDataLabels from "chartjs-plugin-datalabels";
 
 ChartJs.register(Tooltip, Title, ArcElement, Legend);
 
+/**
+ * Donut Component - Renders a donut chart using React Chart.js library.
+ * @param {Object} props - Component props.
+ * @param {number[]} props.dataSet - Data for the chart.
+ * @param {string[]} props.labels - Labels for each data segment.
+ * @param {string[]} props.color - Background color for each segment.
+ * @param {string} props.title - Title for the donut chart.
+ * @param {string} props.subTitle - Subtitle for the donut chart.
+ * @param {number} props.radius - Cutout radius for the donut chart.
+ * @returns {JSX.Element} - JSX element representing the Donut component.
+ */
 const Donut = ({ dataSet, labels, color, title, subTitle, radius }) => {
   const data = {
     datasets: [

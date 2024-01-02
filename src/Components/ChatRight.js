@@ -9,6 +9,10 @@ import { dataEmotionsDougnut } from "../Data/ChartData";
 import { dataEngagementBarLine } from "../Data/ChartData";
 import { dataEngagementLine } from "../Data/ChartData";
 
+/**
+ * ChatRight Component - Renders different charts based on the selected tab.
+ * @returns {JSX.Element} JSX element representing the ChatRight component.
+ */
 const ChatRight = () => {
   const tab = useSelector((state) => state.chat.value);
   const userEmotion = useSelector((state) => state.msg.userEmotion);
