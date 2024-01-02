@@ -5,6 +5,14 @@ import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { setMsg } from "../Store/msgSlice/msg";
 
+/**
+ * MsgShortCut Component - A component representing a shortcut message button in the Chatbar.
+ * @param {Object} props - Props for the MsgShortCut component.
+ * @param {string} props.msg - The message shortcut text.
+ * @param {Function} props.setInputValue - Function to set the input value.
+ * @param {string} props.className - Additional CSS class for styling.
+ * @returns {JSX.Element} JSX element representing the MsgShortCut component.
+ */
 const MsgShortCut = ({ msg, setInputValue, className }) => {
   return (
     <div className="w-fit h-fit p-2 bg-[#A60A53] rounded-xl cursor-pointer flex flex-row flex-nowrap">
@@ -20,6 +28,10 @@ const MsgShortCut = ({ msg, setInputValue, className }) => {
   );
 };
 
+/**
+ * Chatbar Component - A component for entering and sending messages in a chat interface.
+ * @returns {JSX.Element} JSX element representing the Chatbar component.
+ */
 const Chatbar = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector((state) => state.msg.isLoading);
